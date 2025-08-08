@@ -26,20 +26,12 @@ The system's key functionalities include:
 
 The system operates through a continuous, intelligent feedback loop:
 
-**Data Collection** 🎥
-Live video feeds are streamed from traffic cameras.
-⬇️
-**Vehicle Detection** 🚗
-A YOLOv8 computer vision model processes the video to detect and count vehicles, providing real-time traffic density data.
-⬇️
-**Intelligent Decision-Making** 🧠
-A reinforcement learning model analyzes the traffic density and determines the optimal signal timing for each intersection.
-⬇️
-**Signal Adjustment** 🚦
-The AI model communicates the new timings to the traffic controllers via a secure API.
-⬇️
-**Performance Monitoring** 📈
-A real-time dashboard provides insights into traffic flow, congestion trends, and overall system performance.
+graph TD
+    A[🎥 Data Collection<br>Live video feeds are streamed from traffic cameras] --> B[🚗 Vehicle Detection<br>YOLOv8 model detects and counts vehicles in real-time]
+    B --> C[🧠 Intelligent Decision-Making<br>Reinforcement Learning model analyzes traffic density to decide optimal signal timing]
+    C --> D[🚦 Signal Adjustment<br>AI communicates timing changes to traffic controllers via secure API]
+    D --> E[📈 Performance Monitoring<br>Dashboard tracks traffic flow, congestion, and system performance]
+
 
 ## 🏗️ Architecture
 
