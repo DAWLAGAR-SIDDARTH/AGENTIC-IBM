@@ -120,3 +120,16 @@ To get a local version of this project up and running for development or testing
 * Update the configuration files in the project with your specific model API endpoints.
 
 * Execute the main script to start the traffic light system.
+
+
+## 👥 Credits
+
+This project was developed by Team JARVIS as part of the IBM AI-ML Project.
+
+* **Shamla Lokesh**
+
+* **Jonada Tejas**
+
+* **Dawlagar Siddharth**
+
+* **Harsh Soni**
