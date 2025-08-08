@@ -26,15 +26,20 @@ The system's key functionalities include:
 
 The system operates through a continuous, intelligent feedback loop:
 
-1.  **Data Collection:** Live video feeds are streamed from traffic cameras.
-
-2.  **Vehicle Detection:** A YOLOv8 computer vision model processes the video to detect and count vehicles, providing real-time traffic density data.
-
-3.  **Intelligent Decision-Making:** A reinforcement learning model, trained and deployed on IBM Watson Studio, analyzes the traffic density and determines the optimal signal timing for each intersection.
-
-4.  **Signal Adjustment:** The AI model communicates the new timings to the traffic controllers via a secure API.
-
-5.  **Performance Monitoring:** A real-time dashboard provides insights into traffic flow, congestion trends, and overall system performance.
+**Data Collection** 🎥
+Live video feeds are streamed from traffic cameras.
+⬇️
+**Vehicle Detection** 🚗
+A YOLOv8 computer vision model processes the video to detect and count vehicles, providing real-time traffic density data.
+⬇️
+**Intelligent Decision-Making** 🧠
+A reinforcement learning model analyzes the traffic density and determines the optimal signal timing for each intersection.
+⬇️
+**Signal Adjustment** 🚦
+The AI model communicates the new timings to the traffic controllers via a secure API.
+⬇️
+**Performance Monitoring** 📈
+A real-time dashboard provides insights into traffic flow, congestion trends, and overall system performance.
 
 ## 🏗️ Architecture
 
@@ -93,43 +98,25 @@ To get a local version of this project up and running for development or testing
 ### Prerequisites
 
 * Python 3.x
+
 * A valid IBM Cloud account with access to Watson Studio, Cloud Object Storage, and Watson Machine Learning.
+
 * `pip` for installing Python dependencies.
 
-### Installation
+### Configure IBM Cloud Access
 
-1.  **Clone the repository:**
-    ```
-    git clone [https://github.com/DAWLAGAR-SIDDARTH/aiagenta.git](https://github.com/DAWLAGAR-SIDDARTH/aiagenta.git)
-    cd aiagenta
-    ```
+* Set up your IBM Cloud credentials as environment variables or in a configuration file, as per the best practices for your chosen IBM services.
 
-2.  **Install dependencies:**
-    ```
-    pip install -r requirements.txt
-    ```
-    *(Note: You will need to create a `requirements.txt` file listing all the Python libraries used, such as `tensorflow`, `pytorch`, `yolov8`, `requests`, etc.)*
+### Model Training & Deployment
 
-3.  **Configure IBM Cloud Access:**
-    * Set up your IBM Cloud credentials as environment variables or in a configuration file, as per the best practices for your chosen IBM services.
+* Follow the instructions to upload your training data to IBM Cloud Object Storage.
 
-4.  **Model Training & Deployment:**
-    * Follow the instructions to upload your training data to IBM Cloud Object Storage.
-    * Use IBM Watson Studio to train and deploy your YOLOv8 and reinforcement learning models.
-    * Note down the API endpoints for your deployed models.
+* Use IBM Watson Studio to train and deploy your YOLOv8 and reinforcement learning models.
 
-5.  **Run the System:**
-    * Update the configuration files in the project with your specific model API endpoints.
-    * Execute the main script to start the traffic light system.
-    ```
-    python main.py
-    ```
+* Note down the API endpoints for your deployed models.
 
-## 👥 Credits
+### Run the System
 
-This project was developed by Team JARVIS as part of the IBM AI-ML Project.
+* Update the configuration files in the project with your specific model API endpoints.
 
-* **Shamla Lokesh**
-* **Jonada Tejas**
-* **Dawlagar Siddharth**
-* **Harsh Soni**
+* Execute the main script to start the traffic light system.
