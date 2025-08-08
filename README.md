@@ -22,15 +22,6 @@ The system's key functionalities include:
 
 * **Existing Infrastructure Compatibility:** Designed to integrate with standard CCTV cameras and traffic controllers via APIs.
 
-## ⚙️ Workflow
-
-The system operates through a continuous, intelligent feedback loop:
-
-graph TD
-    A[🎥 Data Collection<br>Live video feeds are streamed from traffic cameras] --> B[🚗 Vehicle Detection<br>YOLOv8 model detects and counts vehicles in real-time]
-    B --> C[🧠 Intelligent Decision-Making<br>Reinforcement Learning model analyzes traffic density to decide optimal signal timing]
-    C --> D[🚦 Signal Adjustment<br>AI communicates timing changes to traffic controllers via secure API]
-    D --> E[📈 Performance Monitoring<br>Dashboard tracks traffic flow, congestion, and system performance]
 
 
 ## 🏗️ Architecture
