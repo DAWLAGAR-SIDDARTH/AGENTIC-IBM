@@ -113,6 +113,6 @@ This project was developed by Team JARVIS as part of the IBM AI-ML Project.
 
 * **Jonada Tejas**
 
-* **Dawlagar Siddharth**
+* **Dawlagar Siddarth**
 
 * **Harsh Soni**
